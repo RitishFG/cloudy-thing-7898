@@ -83,6 +83,8 @@ appendData(course)
 // new_price:"₹ 15999",
 // title:"IT Starter Pack (4 Courses)"
 
+
+// function to append data 
 function appendData(course){
     let container=document.getElementById("container");
     container.innerHTML=null
