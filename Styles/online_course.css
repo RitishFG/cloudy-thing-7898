@@ -56,6 +56,7 @@ body{
 text-align: end;
 /* margin: 0ch; */
 margin-top: -15px;
+margin-bottom: 5px;
 }
 #offer_time{
     background-color: #df1e2e;
