@@ -1,0 +1,149 @@
+/* Remove navbar style once it is imported from components */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Graphik Web", Helvetica, sans-serif;
+  background-color: #f8f8f8;
+}
+#navbar {
+  border: 1px solid red;
+  height: 80px;
+}
+#cart_display {
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin: auto;
+  margin-top: 100px;
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 20px;
+  background-color: white;
+}
+.empty {
+  /* border: 1px solid brown; */
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  /* width: 50%; */
+  height: 90%;
+  margin: auto;
+  /* margin-top: 50px; */
+}
+.empty img {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+#cart_items {
+  /* border: 1px solid green; */
+  grid-area: 1/1/2/4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  /* grid-template-columns: repeat(1, 1fr); */
+  /* grid-template-rows: repeat(auto, 1fr); */
+  /* gap: 20px; */
+}
+#cart_items > h2 {
+  background-color: white;
+}
+#cart_items div {
+  /* border: 1px solid blue; */
+  background-color: white;
+  color: #3c4858;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  /* gap: 2px; */
+  justify-content: space-around;
+  align-items: center;
+}
+#cart_items div button {
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #df1e2e;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+#cart_items img {
+  height: 100%;
+  width: 20%;
+}
+#cart_bill {
+  /* border: 1px solid blue; */
+  background-color: white;
+  /* height: auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* justify-content: space-between; */
+}
+#cart_bill div {
+  padding: 8px 0px;
+  display: flex;
+  /* border: 1px solid black; */
+  background-color: white;
+  justify-content: space-between;
+}
+#cart_bill div button {
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #df1e2e;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+#cart_bill div:nth-child(5),
+#cart_bill div:nth-child(6) {
+  /* text-align: center; */
+  /* background-color: black; */
+  justify-content: center;
+  gap: 5px;
+}
+#cart_bill div:nth-child(5) > input {
+  border: none;
+  border-bottom: 2px solid grey;
+  background-color: white;
+}
+hr {
+  width: 90%;
+  margin: auto;
+  border-top: 1px dashed grey;
+}
+/* #nocart {
+  border: 1px solid red;
+  width: 500px;
+  
+} */
+@media all and (min-width: 100px) and (max-width: 850px) {
+  #cart_display {
+    width: 95%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .empty {
+    width: 75%;
+    height: 70%;
+  }
+  .empty img {
+    width: 80%;
+  }
+  #cart_bill {
+    width: 95%;
+    margin: auto;
+  }
+}
