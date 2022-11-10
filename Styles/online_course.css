@@ -3,6 +3,9 @@ body{
     margin: 0px;
     background-color: #f8f8f8;
 }
+#navbar{
+    width: 100%;
+}
 #top img{
     margin-left: 10%;
     height: 250px;
