@@ -1,3 +1,31 @@
+import { navbar } from "../Components/nav.js";
+
+let nav_div = document.getElementById("mnav")
+nav_div.innerHTML = navbar()
+
+const openMenu = document.querySelector("#show-menu");
+
+const closeMenu = document.querySelector("#hide-menu");
+
+const sideMenu = document.querySelector("#nav-menu");
+
+openMenu.addEventListener("click", function(){
+    sideMenu.classList.add('active')
+})
+
+closeMenu.addEventListener("click", function(){
+    sideMenu.classList.remove('active')
+})
+
+
+console.log("fusljfskldfkls")
+
+
+
+
+
+
+
 // Fetching data by search button and with a input value
 
 let btn = document.getElementById('search')
@@ -10,13 +38,13 @@ let id = "b86cc9a0";
 let api_key = "b1aed1fd6b1dd3d7d6928a09b2440f5f";
 
 const Getdata = async () => {
-    let query = document.getElementById("jobs").value
+    let query = document.getElementById("jobse").value
 
 
     try {
         let response = await fetch(`https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=${id}&app_key=${api_key}&what_phrase=${query}`)
         let data = await response.json()
-        console.log(data)
+        // console.log(data)
         Append(data.results)
     }
     catch (error) {
@@ -80,6 +108,9 @@ const Append = (Original) => {
         desc.setAttribute('class', "decs")
         desc.innerText = document.getElementById("stream").value
 
+        let companyName = document.createElement("p")
+        companyName.innerText = el.company.display_name;
+
         let btn = document.createElement('button')
         btn.setAttribute("class", "cardbtn")
         btn.innerText = "VIEW AND APPLY";
@@ -107,7 +138,7 @@ const Append = (Original) => {
 
         let line = document.createElement('hr')
 
-        div1.append(title, desc, place, stipend, line)
+        div1.append(title, companyName, desc, place, stipend, line)
         div2.append(week, img, btn)
         maindiv.append(div1, div2)
         container.append(maindiv)
@@ -118,8 +149,7 @@ const Append = (Original) => {
 
 
 const TransferStream = (data) => {
-
-   
-
+    localStorage.setItem("element", JSON.stringify(data))
+    window.location.href = "./overview.html"
 }
 
