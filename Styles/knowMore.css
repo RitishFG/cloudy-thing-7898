@@ -1,0 +1,47 @@
+#navbar{
+    width: 100%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#coupon{
+    background-color: #df1e2e;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#coupon h4{
+    margin-top: 10px;
+}
+#container{
+    background-image: none;
+}
+#keyFeature{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#keyFeature img{
+    width: 70px;
+}
+#keyFeature>div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+/* key 1 styling code */
+#key1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#key1 img{
+    width: 70px;
+}
+#key1>div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}

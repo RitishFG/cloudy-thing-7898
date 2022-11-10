@@ -79,7 +79,10 @@ let div3=document.createElement("div");
 let know=document.createElement("a");
 know.innerText="KNOW MORE";
 know.style.color="#3d95e1";
-know.style.padding="10px"
+know.style.padding="10px";
+know.addEventListener("click",()=>{
+knowMore(el);
+})
 let adc=document.createElement("button");
 adc.innerText="ADD TO CART";
 // adc.style.backgroundColor="red"
@@ -94,3 +97,6 @@ container.append(div)
     })
 }
 
+function knowMore(el){
+    localStorage.setItem("knowMore",JSON.stringify(el))
+}
