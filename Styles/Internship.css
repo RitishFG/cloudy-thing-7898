@@ -1,0 +1,121 @@
+
+
+.cardbtn{
+    color:blue;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border:0px;
+    background-color: white;
+    font-weight: bold;
+}
+.cardbtn:hover{
+    color: rgba(146, 47, 232, 0.934);
+}
+.title{
+    font-family: sans-serif;
+
+}
+.decs{
+   font-size: 15px;
+    font-family: sans-serif;
+    color:gray
+}
+.card{
+    width: 75%;
+    text-align: left;
+   padding:10px;
+  
+   
+}
+#rightcontainer{
+    width: 180%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right:100px
+}
+hr{
+    border-collapse :1px;
+
+}
+.stipend{
+    font-family: sans-serif;
+    font-weight: bold;
+    color:gray
+}
+.place{
+    font-family: sans-serif;
+    color:gray
+}
+#container{
+    width:100%;
+    display: flex;
+    border:0px solid red;
+    margin: auto;
+    justify-content: space-around;
+}
+#leftcontainer>img{
+    width:60%;
+   margin-left: 150px;
+}
+#leftcontainer>img:hover{
+  cursor: pointer;
+}
+
+
+.maindiv{
+    width:100%;
+    display: flex;
+border:0px solid red;
+justify-content: space-between;
+}
+
+.btnandimg{
+   text-align: center;
+   margin-top: 58px;
+}
+p{
+    font-family: sans-serif;
+}
+.share:hover{
+cursor: pointer;
+
+}
+
+#Searchbar{
+    /* border: 1px solid; */
+    width:70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  
+}
+
+#Searchbar>div>select{
+    width:120%;
+    border:0px;
+   
+}
+#searchcont{
+    margin-top: 52px;
+}
+#or{
+    margin-top: 40px;
+}
+
+#search{
+    width:100px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 0px;
+    background-color:rgb(8,124,221);
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#search:hover{
+    background-color: rgb(30, 102, 160);
+    cursor: pointer;
+}
+
+
+
