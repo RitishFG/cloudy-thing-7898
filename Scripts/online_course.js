@@ -102,12 +102,15 @@ let desc=document.createElement("p");
 desc.innerText=el.description;
 
 let line=document.createElement("hr");
-line.style.border="dotted"
+// line.style.border="dotted"
 line.style.color="gray"
+// line.style.height="1ch"
 // price
 let div2=document.createElement("div");
 let op=document.createElement("p");
 op.innerText=el.old_price;
+op.style.textDecoration="line-through"
+
 let np=document.createElement("h3");
 np.innerText=el.new_price;
 div2.append(op,np);

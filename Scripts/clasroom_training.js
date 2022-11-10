@@ -64,6 +64,7 @@ line.style.color="gray"
 let div2=document.createElement("div");
 let op=document.createElement("p");
 op.innerText=el.old_price;
+op.style.textDecoration="line-through"
 let np=document.createElement("h3");
 np.innerText=el.new_price;
 div2.append(op,np);
