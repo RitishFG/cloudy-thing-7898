@@ -1,5 +1,6 @@
  const navbar = () =>{
     return ` 
+    <div id="man">
     <div id="navbar">
             <div id="ttm">
               <div id="sho">
@@ -79,6 +80,7 @@
               </div>
             </ul>
           </nav>
+          </div>
   `
  }
 
