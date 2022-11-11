@@ -6,8 +6,7 @@
   background-color: #f8f8f8;
 }
 #navbar {
-  border: 1px solid red;
-  height: 80px;
+  width: 100%;
 }
 #cart_display {
   /* border: 1px solid red; */

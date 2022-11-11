@@ -1,13 +1,33 @@
+import { navbar } from "../Components/nav.js";
+// console.log(navbar);
+let nav_div = document.getElementById("navbar");
+nav_div.innerHTML = navbar();
+const openMenu = document.querySelector("#show-menu");
+
+const closeMenu = document.querySelector("#hide-menu");
+
+const sideMenu = document.querySelector("#nav-menu");
+
+openMenu.addEventListener("click", function () {
+  sideMenu.classList.add("active");
+});
+
+closeMenu.addEventListener("click", function () {
+  sideMenu.classList.remove("active");
+});
 // Test code to make cart Local Storage
 // let cart = JSON.parse(localStorage.getItem("cart")) || [];
 // let items = {
-//   image:
-//     "https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png",
-//   name: "Digital Marketing Course",
-//   price: 5999,
+//   image: "https://assets.interntheory.com/courses/banner/1573118304.png",
+//   title: "Offline Digital Marketing Course",
+//   description:
+//     "Learn the art of digital marketing. Sign up for this offline ...",
+//   old_price: "₹ 19999",
+//   new_price: "₹ 9999",
+//   EMI: "EMI Starting at ₹ 572/monthhelp_outline",
 // };
 // cart.push(items);
-// // console.log(items);
+// console.log(items);
 // localStorage.setItem("cart", JSON.stringify(cart));
 
 // LocalStorage Variables Created
@@ -77,9 +97,9 @@ function displayCart(data) {
     let img = document.createElement("img");
     img.src = el.image;
     let p = document.createElement("p");
-    p.innerText = el.name;
+    p.innerText = el.title;
     let p2 = document.createElement("p");
-    p2.innerText = "Rs. " + el.price;
+    p2.innerText = "Rs. " + el.new_price;
     let btn = document.createElement("button");
     btn.innerText = "Remove";
     btn.addEventListener("click", function (event) {
@@ -100,7 +120,7 @@ function showBill(data) {
   //   total sum  calculated
   let sum = 0;
   for (let i = 0; i < data.length; i++) {
-    sum = sum + Number(data[i].price);
+    sum = sum + Number(data[i].new_price.substring(2));
   }
   let amount = document.querySelector("#amount>p:nth-child(2)");
   amount.innerText = "Rs. " + sum;
@@ -121,7 +141,7 @@ function showBill(data) {
 function checkCoupon() {
   // checking enetered coupon code
   let text = document.querySelector("#couponcode").value;
-  if (text == "Masai20") {
+  if (text == "FIRSTCOURSE") {
     // if coupon is Masai20 add 20% discount
     alert("Coupon Applied");
     let total = document.querySelector("#total>h2:nth-child(2)");
@@ -130,6 +150,7 @@ function checkCoupon() {
     t = t - Math.floor(0.2 * t);
     total.innerText = "Rs. " + t;
     // new value updated
+    document.querySelector("#go").removeEventListener("click", checkCoupon);
   } else {
     alert("Invalid Coupon");
     let t = document.querySelector("#couponcode");
