@@ -1,5 +1,31 @@
+import { navbar } from "../Components/nav.js";
 
+let nav_div= document.getElementById("mnav")
+nav_div.innerHTML=navbar()
 // Fetching data by search button and with a input value
+const openMenu = document.querySelector("#show-menu");
+
+const closeMenu = document.querySelector("#hide-menu");
+
+const sideMenu = document.querySelector("#nav-menu");
+
+openMenu.addEventListener("click", function(){
+    sideMenu.classList.add('active')
+})
+
+closeMenu.addEventListener("click", function(){
+    sideMenu.classList.remove('active')
+})
+
+
+console.log("fusljfskldfkls")
+
+
+
+
+
+
+
 
 let btn = document.getElementById('search')
 btn.onclick = () => {
@@ -11,7 +37,7 @@ let id = "b86cc9a0";
 let api_key = "b1aed1fd6b1dd3d7d6928a09b2440f5f";
 
 const Getdata = async () => {
-    let query = document.getElementById("jobs").value
+    let query = document.getElementById("jobse").value
 
 
     try {
@@ -105,12 +131,12 @@ Streams.onchange = () => {
 }
 
 let countries = document.getElementById("Countries");
-Countries.onchange = () => {
+countries.onchange = () => {
     Overallsection()
 }
 
 
-const Overallsection=async()=>{
+const Overallsection = async () => {
 
     let nameofStream = document.getElementById("stream").value;
 
@@ -134,7 +160,7 @@ const Overallsection=async()=>{
 
 let container = document.getElementById('rightcontainer')
 const Append = (Original) => {
-    container.innerHTML=null
+    container.innerHTML = null
 
     Original.forEach((el) => {
         let maindiv = document.createElement('div')
@@ -160,12 +186,17 @@ const Append = (Original) => {
         stipend.innerText = "Stipend: " + el.salary_min + " - " + el.salary_max + " per month";
 
         let status = document.createElement('p')
-        status.innerText = el.contract_time;
+        // status.innerText = el.contract_time;
+        if(el.contract_time==null){
+            status.innerText = "full_time";
+        }else{
+            status.innerText = el.contract_time;
+        }
 
         let place = document.createElement('p')
         place.setAttribute("class", "place")
         place.innerText = el.location.display_name;
-
+       
         let div2 = document.createElement('div')
         div2.setAttribute("class", "btnandimg")
 
@@ -177,7 +208,7 @@ const Append = (Original) => {
         img.setAttribute("class", "share")
 
         let line = document.createElement('hr')
-
+        line.setAttribute("class","hr")
         div1.append(title, desc, place, status, stipend, line)
         div2.append(week, img, btn)
         maindiv.append(div1, div2)

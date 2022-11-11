@@ -31,11 +31,14 @@
 #rightcontainer{
     width: 180%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-right:100px
+    margin-right:100px;
+    padding: 10px;
+    line-height: 23px;
+    margin-top: 15px;
 }
-hr{
-    border-collapse :1px;
-
+.hr{
+     border-collapse :1px; 
+  
 }
 .stipend{
     font-family: sans-serif;
@@ -60,7 +63,9 @@ hr{
 #leftcontainer>img:hover{
   cursor: pointer;
 }
-
+#leftcontainer{
+    margin-top: 15px;
+}
 
 .maindiv{
     width:100%;
@@ -71,7 +76,7 @@ justify-content: space-between;
 
 .btnandimg{
    text-align: center;
-   margin-top: 58px;
+   margin-top: 45px;
 }
 p{
     font-family: sans-serif;
@@ -87,12 +92,19 @@ cursor: pointer;
     display: flex;
     justify-content: space-between;
     margin: auto;
-  
+    
 }
 
 #Searchbar>div>select{
     width:120%;
-    border:0px;
+padding:3px;
+border-radius: 5px;
+background-color: rgb(241, 245, 250);
+   
+}
+#Searchbar>div>select:hover{
+   
+    cursor: pointer;
    
 }
 #searchcont{
@@ -104,7 +116,7 @@ cursor: pointer;
 
 #search{
     width:100px;
-    padding: 4px;
+    padding: 6px;
     border-radius: 5px;
     border: 0px;
     background-color:rgb(8,124,221);
@@ -113,9 +125,27 @@ cursor: pointer;
     font-weight: bold;
 }
 #search:hover{
-    background-color: rgb(30, 102, 160);
+    background-color: rgb(39, 114, 175);
     cursor: pointer;
 }
 
+.navtop{
+    margin-top: 100px;
+}
+#searchcont{
+    margin-top: 130px;
+}
+#or{
+    margin-top: 130px; 
+}
+select{
+    margin-top: 20px;
+    
+}
 
-
+#jobse{
+    border:0px solid black;
+    padding:7px;
+border-radius: 5px;
+background-color: rgb(241, 245, 250);
+}
