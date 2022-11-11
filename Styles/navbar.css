@@ -13,7 +13,7 @@ hr {
 #navbar {
   background-color: #fff;
   height: 80px;
-  width: 100%;
+
   display: flex;
   justify-content: start;
   align-items: center;
@@ -197,3 +197,4 @@ hr {
   position: fixed;
   width: 100%;
 }
+
