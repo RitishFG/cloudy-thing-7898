@@ -29,6 +29,8 @@ console.log("fusljfskldfkls")
 let LSdata = JSON.parse(localStorage.getItem("element"))
 
 
+
+
 let content = document.getElementById("rightcontainers")
 
 const Knowing = (data) => {
