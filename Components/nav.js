@@ -1,6 +1,6 @@
  const navbar = () =>{
     return ` 
-    <div id="navbar">
+     <div id="navbar">
             <div id="ttm">
               <div id="sho">
                 <a href="#" class="menu-bars" id="show-menu">
