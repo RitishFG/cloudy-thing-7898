@@ -23,7 +23,12 @@ let div=document.getElementById("container")
 // background image
 let div1=document.createElement("div");
 let url=data.image
-div1.style.backgroundImage=`url('${url}')`;
+// div1.style.backgroundImage=`url('${url}')`;="url('http///')"
+let im=document.createElement("img");
+im.src=url;
+im.style.width="100%"
+im.style.height="400px"
+div1.append(im)
 
 let divx=document.createElement("div")
 divx.style.margin="20px 0 20px 150px"
@@ -32,7 +37,7 @@ divx.style.width="70%"
 // title and description
 let div2=document.createElement("div");
 div2.style.padding="40px"
-div2.style.margin="300px 0 0 0"
+// div2.style.margin="-80px 0 0 0"
 div2.style.boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px"
 let title=document.createElement("h1");
 title.innerText=data.title;
