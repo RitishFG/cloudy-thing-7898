@@ -1,4 +1,5 @@
 import { navbar } from "../Components/nav.js";
+
 // console.log(navbar);
 let nav_div = document.getElementById("navbar");
 nav_div.innerHTML = navbar();
@@ -180,3 +181,6 @@ function deleteCartItem(i) {
   //   Calling getCartItems again such that if cart becomes empty then accordingly flow can be created
   getCartItems();
 }
+import { footer } from "../Components/footerr.js";
+let foot = document.querySelector("#footer");
+foot.innerHTML = footer();
