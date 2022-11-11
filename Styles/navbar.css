@@ -13,7 +13,7 @@ hr {
 #navbar {
   background-color: #fff;
   height: 80px;
-
+z-index: 100;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -32,7 +32,7 @@ hr {
   height: 100vh;
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -100%;
   transition: 850ms;
@@ -194,7 +194,6 @@ hr {
 }
 
 #mnav {
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
-
