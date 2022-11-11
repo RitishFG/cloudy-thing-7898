@@ -108,6 +108,9 @@ knowMore(el);
 })
 let adc=document.createElement("button");
 adc.innerText="ADD TO CART";
+adc.addEventListener("click",()=>{
+addToCart(el);
+})
 // adc.style.backgroundColor="red"
 // adc.style.color="white"
 // adc.style.borderRadius="4px"
@@ -118,6 +121,11 @@ div.append(img,title,desc,line,div2,emi,div3);
 container.append(div)
 
     })
+}
+function addToCart(el){
+let cart=JSON.parse(localStorage.getItem("cart"))||[];
+cart.push(el);
+localStorage.setItem("cart",JSON.stringify(cart));
 }
 
 function knowMore(el){
