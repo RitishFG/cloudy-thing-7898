@@ -13,7 +13,7 @@ hr {
 #navbar {
   background-color: #fff;
   height: 80px;
-
+z-index: 100;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -32,7 +32,7 @@ hr {
   height: 100vh;
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -100%;
   transition: 850ms;
@@ -86,10 +86,22 @@ hr {
   justify-content: start;
   align-items: center;
   text-align: center;
+  
 }
 #navbar-toggle a {
   text-decoration: none;
+  margin-bottom: 12px;
+
+
+ 
 }
+
+#navbar-toggle a:hover{
+
+  cursor: pointer;
+}
+
+
 .fa-bars {
   color: rgb(0, 0, 0);
 }
@@ -106,10 +118,14 @@ hr {
 #show-menu {
   color: #f9f9f9;
   border: 0px solid red;
+  
+
 }
 
-#ttm {
+.tttm {
   display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #ltm {
   display: flex;
@@ -126,10 +142,31 @@ hr {
   border: 0px solid;
   margin-left: 20px;
   margin-top: 10px;
+
 }
 .img img {
   width: 100%;
-  height: 60px;
+  height: 73px;
+}
+
+#im2{
+  padding-bottom: 0px;
+  border: 0px solid red;
+  margin-bottom: 25px;
+  height: 75px;
+  border-radius: 35px;
+}
+#im1>a>img{
+border: 0px solid red;
+height: 65px;
+
+
+} 
+#im1{
+  width: 100%;
+height: 70px;
+margin-bottom: 7px;
+
 }
 
 #ccl {
@@ -140,7 +177,7 @@ hr {
 #ccl > i {
   font-size: 30px;
   color: #ca1e1e;
-  border: 1px solid blue;
+  border: 0px solid blue;
   height: 30px;
   width: 50px;
 }
@@ -150,21 +187,25 @@ hr {
 }
 #sho:hover {
   background-color: rgb(231, 236, 236);
+  margin-bottom: 30px;
+
+
 }
 
 #sho {
-  width: 40px;
+  width: 80px;
+  height: 40px;
   border: 0px solid blueviolet;
   text-align: center;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin-left: 16px;
+  margin-bottom: 30px;
   border-radius: 19px;
   padding-top: 9px;
-  padding-bottom: 9px;
+  padding-bottom: 0px;
 }
 
 #hide-menu {
@@ -194,7 +235,12 @@ hr {
 }
 
 #mnav {
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 
+.img>a>img{
+  border-radius: 35px;
+  width: 110%;
+
+}
