@@ -1,6 +1,9 @@
 import {navbar} from "../Components/nav.js";
 let nav=document.getElementById("navbar")
 nav.innerHTML=navbar();
+import { footer } from "../Components/footerr.js";
+let foot=document.getElementById("footer");
+foot.innerHTML=footer();
 
 const openMenu = document.querySelector("#show-menu");
 
