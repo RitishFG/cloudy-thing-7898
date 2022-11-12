@@ -1,7 +1,19 @@
 import { navbar } from "../Components/nav.js";
 
-let nav_div= document.getElementById("mnav")
-nav_div.innerHTML=navbar()
+let nav_div = document.getElementById("mnav")
+nav_div.innerHTML = navbar()
+
+
+import { footer } from "../Components/footerr.js";
+
+let fot = document.getElementById('footer')
+fot.innerHTML = footer()
+
+
+
+
+
+
 // Fetching data by search button and with a input value
 const openMenu = document.querySelector("#show-menu");
 
@@ -9,16 +21,16 @@ const closeMenu = document.querySelector("#hide-menu");
 
 const sideMenu = document.querySelector("#nav-menu");
 
-openMenu.addEventListener("click", function(){
+openMenu.addEventListener("click", function () {
     sideMenu.classList.add('active')
 })
 
-closeMenu.addEventListener("click", function(){
+closeMenu.addEventListener("click", function () {
     sideMenu.classList.remove('active')
 })
 
 
-console.log("fusljfskldfkls")
+
 
 
 
@@ -179,7 +191,10 @@ const Append = (Original) => {
 
         let btn = document.createElement('button')
         btn.setAttribute("class", "cardbtn")
-        btn.innerText = "UPGRADE SKILLS";
+        btn.innerText = "VIEW AND APPLY";
+        btn.addEventListener("click", () => {
+            TransferStream(el)
+        })
 
         let stipend = document.createElement('p')
         stipend.setAttribute("class", "stipend")
@@ -187,16 +202,16 @@ const Append = (Original) => {
 
         let status = document.createElement('p')
         // status.innerText = el.contract_time;
-        if(el.contract_time==null){
+        if (el.contract_time == null) {
             status.innerText = "full_time";
-        }else{
+        } else {
             status.innerText = el.contract_time;
         }
 
         let place = document.createElement('p')
         place.setAttribute("class", "place")
         place.innerText = el.location.display_name;
-       
+
         let div2 = document.createElement('div')
         div2.setAttribute("class", "btnandimg")
 
@@ -208,11 +223,18 @@ const Append = (Original) => {
         img.setAttribute("class", "share")
 
         let line = document.createElement('hr')
-        line.setAttribute("class","hr")
+        line.setAttribute("class", "hr")
         div1.append(title, desc, place, status, stipend, line)
         div2.append(week, img, btn)
         maindiv.append(div1, div2)
         container.append(maindiv)
     });
 
+}
+
+
+
+const TransferStream = (data) => {
+    localStorage.setItem("element", JSON.stringify(data))
+    window.location.href = "./overview.html"
 }

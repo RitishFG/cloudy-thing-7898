@@ -3,6 +3,12 @@ import { navbar } from "../Components/nav.js";
 let nav_div = document.getElementById("mnav")
 nav_div.innerHTML = navbar()
 
+
+
+import {footer} from "../Components/footerr.js"
+let fot=document.getElementById('footer')
+fot.innerHTML=footer()
+
 const openMenu = document.querySelector("#show-menu");
 
 const closeMenu = document.querySelector("#hide-menu");
@@ -18,7 +24,7 @@ closeMenu.addEventListener("click", function(){
 })
 
 
-console.log("fusljfskldfkls")
+
 
 
 
