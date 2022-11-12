@@ -1,18 +1,18 @@
  const navbar = () =>{
     return ` 
      <div id="navbar">
-            <div id="ttm">
+            <div id="ttm" class="tttm">
               <div id="sho">
                 <a href="#" class="menu-bars" id="show-menu">
                   <i class="fas fa-bars"></i>
                 </a>
               </div>
       
-              <div class="img">
-                <a href="#"></a>
+              <div class="img" id="im1">
+                <a href="index.html">
                 <img
                 src="https://i.ibb.co/DVLwgqg/I2J.jpg" alt="I2J"
-                />
+                /></a>
               </div>
             </div>
       
@@ -32,9 +32,9 @@
                 <a href="#" class="menu-bars" id="hide-menu">
                   <i class="fas fa-bars nav-icon"></i>
                 </a>
-                <div class="img">
-                  <a href="#">
-                    <img
+                <div class="img" id="im2">
+                  <a href="index.html" >
+                    <img 
                     src="https://i.ibb.co/DVLwgqg/I2J.jpg" alt="I2J"
                   /></a>
                 </div>
