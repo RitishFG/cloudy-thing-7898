@@ -1,0 +1,29 @@
+#body{
+    padding:100px
+}
+#ques{
+    color:blue;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#ans{
+    color:rgb(88, 86, 86);
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    line-height: 24px;
+}
+#li{
+    color:rgb(88, 86, 86);
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    line-height: 24px; 
+}
+#cont{
+    color:blue;
+    font-size: 40px;
+    text-align: center;
+}

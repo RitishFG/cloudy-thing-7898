@@ -14,7 +14,6 @@ fot.innerHTML = footer()
 
 
 
-// Fetching data by search button and with a input value
 const openMenu = document.querySelector("#show-menu");
 
 const closeMenu = document.querySelector("#hide-menu");
@@ -37,6 +36,7 @@ closeMenu.addEventListener("click", function () {
 
 
 
+// Fetching data by search button and with a input value
 
 
 let btn = document.getElementById('search')
