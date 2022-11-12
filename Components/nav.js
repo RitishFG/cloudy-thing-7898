@@ -18,9 +18,12 @@
       
             <div id="ltm">
               <div id="cartt">
+              <a href="cart.html">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-              </div>
+                </a>
+                </div>
               <div>
+              
                 <button id="btnn">SIGN IN</button>
               </div>
             </div>
@@ -42,13 +45,13 @@
       
               <div class="nav-section">
                 <li id="home" class="nav-text">
-                  <a href="#"><i class="fas fa-home nav-icon"></i>Home</a>
+                  <a href="index.html"><i class="fas fa-home nav-icon"></i>Home</a>
                 </li>
                 <li id="internships" class="nav-text">
-                  <a href="#"><i class="fa fa-list nav-icon"></i>Internships</a>
+                  <a href="internship.html"><i class="fa fa-list nav-icon"></i>Internships</a>
                 </li>
                 <li id="jobs" class="nav-text">
-                  <a href="#"><i class="fa-solid fa-briefcase nav-icon"></i>Jobs</a>
+                  <a href="jobs.html"><i class="fa-solid fa-briefcase nav-icon"></i>Jobs</a>
                 </li>
                 <li class="nav-text">
                   <a href="#"
@@ -57,14 +60,14 @@
                 </li>
       
                 <li id="online_courses" class="nav-text">
-                  <a href="#"><i class="fa fa-book nav-icon"></i>Online Courses</a>
+                  <a href="online_course.html"><i class="fa fa-book nav-icon"></i>Online Courses</a>
                 </li>
                 <li id="classroom_trianing" class="nav-text">
-                  <a href="#"><i class="fa fa-id-card-o nav-icon"></i>Trainings</a>
+                  <a href="classroom_training.html"><i class="fa fa-id-card-o nav-icon"></i>Trainings</a>
                 </li>
       
                 <li id="contact" class="nav-text">
-                  <a href="#"><i class="fa fa-phone nav-icon"></i>Contact Us</a>
+                  <a href="contactUs.html"><i class="fa fa-phone nav-icon"></i>Contact Us</a>
                 </li>
               </div>
       

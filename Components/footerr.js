@@ -37,10 +37,10 @@ const footer = () => {
     </div>
     <div id="down">
         <div id="dup">
-            <a href="#"><h4>REFUND & CANCELLATION POLICY</h4></a>
+            <a href="refund&cancilation.html"><h4>REFUND & CANCELLATION POLICY</h4></a>
             <a href="#"><h4>COURSES</h4></a>
-            <a href="#"><h4>TERMS AND CONDITIONS</h4></a>
-            <a href="#"><h4>PRIVACY POLICY</h4></a>
+            <a href="terms&cond.html"><h4>TERMS AND CONDITIONS</h4></a>
+            <a href="privacypolicy.html"><h4>PRIVACY POLICY</h4></a>
             <a href="#"><h4>CONTACT US</h4></a>
             <a href="#"><h4>ABOUT US</h4></a>
             <a href="#"><h4>SITEMAP</h4></a>
