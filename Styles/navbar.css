@@ -20,6 +20,7 @@ z-index: 100;
   border: 0px solid;
   justify-content: space-between;
   box-shadow: rgba(41, 39, 39, 0.2) 0px 2px 8px 0px;
+
 }
 
 .menu-bars {
@@ -38,11 +39,13 @@ z-index: 100;
   transition: 850ms;
   color: black;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 }
 
 #nav-menu.active {
   left: 0;
   transition: 350ms;
+
 }
 
 .nav-text {
@@ -133,6 +136,10 @@ z-index: 100;
 }
 #ltm > div {
   margin-left: 40px;
+  
+}
+#cartt>a>i{
+  color: #141212;
 }
 
 .img {
