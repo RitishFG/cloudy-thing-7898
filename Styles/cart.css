@@ -3,7 +3,7 @@
   margin: 0px;
   padding: 0px;
   font-family: "Graphik Web", Helvetica, sans-serif;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
 }
 #navbar {
   width: 100%;
@@ -22,6 +22,7 @@
   gap: 20px;
   padding: 20px 20px;
   background-color: white;
+  margin-bottom: 50px;
 }
 .empty {
   /* border: 1px solid brown; */
@@ -119,11 +120,11 @@
   border-bottom: 2px solid grey;
   background-color: white;
 }
-hr {
+/* hr {
   width: 90%;
   margin: auto;
   border-top: 1px dashed grey;
-}
+} */
 /* #nocart {
   border: 1px solid red;
   width: 500px;

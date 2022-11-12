@@ -1,10 +1,11 @@
-// let acitve_user = "xyz";
+// let acitve_user = "abc";
 // localStorage.setItem("active_user", JSON.stringify(acitve_user));
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 cart.push("");
 document.querySelector("form").addEventListener("submit", makePayment);
 function makePayment(event) {
   event.preventDefault();
+  // checking card details
   let form = document.querySelector("form");
   if (form.name.value == "") {
     alert("Enter Name");
@@ -21,6 +22,7 @@ function makePayment(event) {
   } else if (form.cvv.value.length != 3) {
     alert("CVV must be 3 digit");
   } else {
+    // if card details are correct function call to addCourseData
     addCourseData();
   }
 }
@@ -29,6 +31,7 @@ function addCourseData() {
   let active_user = JSON.parse(localStorage.getItem("active_user"));
   let cart = JSON.parse(localStorage.getItem("cart"));
   let index = -1;
+  // checking if user has taken a course before or not
   for (let i = 0; i < user_data.length; i++) {
     if (user_data[i].user == active_user) {
       index = i;
@@ -36,6 +39,7 @@ function addCourseData() {
     }
   }
   if (index == -1) {
+    // if not then adding user to local storage variable
     let data = {
       user: active_user,
       enrolled: [],
@@ -46,17 +50,20 @@ function addCourseData() {
     }
     user_data.push(data);
   } else {
+    // else adding the course in the enrolled section of that user element in local storage
     for (let i = 0; i < cart.length; i++) {
       user_data[index].enrolled.push(cart[i]);
     }
   }
   let flag = false;
   while (flag != true) {
+    // getting otp and checking till otp is correct
     flag = checkOTP();
     if (flag) {
       cart = [];
       localStorage.setItem("cart", JSON.stringify(cart));
       localStorage.setItem("user_data", JSON.stringify(user_data));
+      // clearing cart details and appending user_data to local storage
       alert("Payment Successfull");
       break;
     }
