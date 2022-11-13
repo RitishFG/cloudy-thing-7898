@@ -121,5 +121,6 @@ const gotoInternship=()=>{
 }
 
 const Gotocheckout=()=>{
-    window.location.href="cart.html"
+    // window.location.href="cart.html"
+    alert("You are successfully applied")
 }
