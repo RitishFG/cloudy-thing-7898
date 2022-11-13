@@ -27,4 +27,5 @@ function myfun(event){
     event.preventDefault();
 
     alert("we will get back to you soon")
+    window.location.reload(); 
 }

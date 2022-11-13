@@ -74,3 +74,11 @@ margin-bottom: 5px;
 #offer_time>h4{
     margin-top: 20px;
 }
+@media all and (min-width: 100px) and (max-width: 850px){
+    #container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
+}
+}
