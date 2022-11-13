@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/register.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="login">
+        <form name='form-login'>
+            <div id="container">
+                <div class="margin"></div>
+
+                <h1>SIGN IN</h1>
+
+                <label for="userName">Email:</label>
+                <input type="email" id="userEmail" placeholder="Username" required>
+
+                <label for="userPw">Password:</label>
+                <input type="password" id="userPw" placeholder="Password" required>
+
+                <div id="remember">
+
+                    <input type="checkbox" value="lsRememberMe" id="rememberMe">
+                    <label for="">Remember Me</label>
+
+                </div>
+
+                <input id="login_btn" type="submit" value="Login" onclick="check()">
+                <p>Don't have an account?<a href="register.html">Create your account</a></p>
+                <div class="margin"></div>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+<script src="./Scripts/register_new.js"></script>
