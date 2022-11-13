@@ -1,5 +1,5 @@
- const navbar = () =>{
-    return ` 
+const navbar = () => {
+  return ` 
      <div id="navbar">
             <div id="ttm" class="tttm">
               <div id="sho">
@@ -24,7 +24,7 @@
                 </div>
               <div>
               
-                <button id="btnn">SIGN IN</button>
+              <a href="register_new.html"><button id="btnn">SIGN IN</button></a>
               </div>
             </div>
           </div>
@@ -74,18 +74,15 @@
               <div class="nav-section">
                 <hr />
                 <li id="register" class="nav-text">
-                  <a href="#"><i class="fa fa-sign-in nav-icon"></i>Register</a>
+                  <a href="register_new.html"><i class="fa fa-sign-in nav-icon"></i>Register</a>
                 </li>
                 <li id="login" class="nav-text">
-                  <a href="#"><i class="fa fa-user-circle-o nav-icon"></i>Login</a>
+                  <a href="signin.html"><i class="fa fa-user-circle-o nav-icon"></i>Login</a>
                 </li>
               </div>
             </ul>
           </nav>
-  `
- }
+  `;
+};
 
-
-
-
- export { navbar }
+export { navbar };
