@@ -69,6 +69,7 @@ function addCourseData() {
     }
   }
   //   Add Window.location to Homepage or Dashboard;
+  window.location = "index.html";
 }
 function checkOTP() {
   let otp = window.prompt("Enter otp");
