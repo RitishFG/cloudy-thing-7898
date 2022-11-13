@@ -54,7 +54,7 @@ const navbar = () => {
                   <a href="jobs.html"><i class="fa-solid fa-briefcase nav-icon"></i>Jobs</a>
                 </li>
                 <li class="nav-text">
-                  <a href="#"
+                  <a href="classroom_training.html"
                     ><i class="fa fa-id-card-o nav-icon"></i>Post Internship</a
                   >
                 </li>

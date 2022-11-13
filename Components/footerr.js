@@ -1,5 +1,5 @@
 const footer = () => {
-    return `<div id="main">
+  return `<div id="main">
     <div id="flx">
         <div id="logo">
     <div class="i"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></div>
@@ -38,18 +38,17 @@ const footer = () => {
     <div id="down">
         <div id="dup">
             <a href="refund&cancilation.html"><h4>REFUND & CANCELLATION POLICY</h4></a>
-            <a href="#"><h4>COURSES</h4></a>
+            <a href="online_course.html"><h4>COURSES</h4></a>
             <a href="terms&cond.html"><h4>TERMS AND CONDITIONS</h4></a>
             <a href="privacypolicy.html"><h4>PRIVACY POLICY</h4></a>
-            <a href="#"><h4>CONTACT US</h4></a>
+            <a href="contactUs.html"><h4>CONTACT US</h4></a>
             <a href="#"><h4>ABOUT US</h4></a>
             <a href="#"><h4>SITEMAP</h4></a>
         </div>
         <hr>
         <div id="ddd"><h4>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</h4></div>
     </div>
-    </div>`
-    }
-    
-    
-    export { footer }
+    </div>`;
+};
+
+export { footer };

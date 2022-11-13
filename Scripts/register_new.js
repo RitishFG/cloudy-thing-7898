@@ -34,40 +34,33 @@ function store() {
 function check(event) {
   // event.preventDefault();
   var data = JSON.parse(localStorage.getItem("login_data"));
-  let active_user = JSON.parse(localStorage.getItem("active_user")) || "";
+  let active_user = JSON.parse(localStorage.getItem("active_user")) || null;
   var userEmail = document.getElementById("userEmail").value;
   var userPw = document.getElementById("userPw").value;
   var userRemember = document.getElementById("rememberMe");
+  let flag = -1;
   if (userEmail == "admin" && userPw == "admin") {
     window.location = "admin.html";
+    flag = 1;
   }
-  let flag = -1;
-  data.map(function (el) {
-    if (el.email == userEmail && el.pw == userPw) {
-      alert("Login Successfull");
-      flag = 1;
-      active_user = el.name;
-
-      // flag = 1;
-    }
-    if (flag == 1) {
-      toIndex();
-    }
-  });
-  // if (flag == 1) {
-
-  //   window.location = "index.html";
-  // }
   if (flag == -1) {
-    alert("Incorrect Details");
+    data.forEach(function (el) {
+      if (el.email == userEmail && el.pw == userPw) {
+        alert("Login Successfull");
+        flag = 2;
+        active_user = el.name;
+        console.log(active_user);
+        localStorage.setItem("active_user", JSON.stringify(active_user));
+        window.location = "index.html";
+      }
+    });
+    if (flag == -1) {
+      alert("Incorrect Details");
+    }
   }
   // if (userEmail == data.email && userPw == data.pw) {
   //   alert("You are logged in.");
   // } else {
   //   alert("Error on login");
   // }
-}
-function toIndex() {
-  localStorage.setItem("active_user", JSON.stringify(active_user));
-  window.location = "index.html";
 }
