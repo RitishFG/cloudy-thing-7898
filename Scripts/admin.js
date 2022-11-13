@@ -225,38 +225,37 @@ let companies = [
     name: "PAYTM",
   },
 ];
-// function logoutClicked()
-// {
-//   window.location="login.html"
-// }
-// document.querySelector("#logout").addEventListener("click",logoutClicked);
+function logoutClicked() {
+  window.location = "signin.html";
+}
+document.querySelector("#logout").addEventListener("click", logoutClicked);
 displayUsers();
 function displayUsers() {
-  console.log("in");
+  // console.log("in");
   // to be completed after signup page;
-  // let login_data = JSON.parse(localStorage.getItem("login_data")) || [];
-  // let m = document.createElement("#users");
-  // let headDiv = document.createElement("div");
-  // headDiv.classList = "parentdiv";
-  // let head1 = document.createElement("h2");
-  // head1.innerText = "S.No";
-  // let head2 = document.createElement("h2");
-  // head2.innerText = "Name";
-  // let h = document.createElement("hr");
-  // h.classList = "line";
-  // headDiv.append(head1, head2);
-  // m.append(headDiv, h);
-  // login_data.forEach(function (el, i) {
-  //   let div = document.createElement("div");
-  //   let p = document.createElement("p");
-  //   p.innerText = i + 1;
-  //   let p2 = document.createElement("p");
-  //   p2.innerText = el.firstname;
-  //   let hr = document.createElement("hr");
-  //   hr.classList = "line";
-  //   div.append(p, p2);
-  //   m.append(div, hr);
-  // });
+  let login_data = JSON.parse(localStorage.getItem("login_data")) || [];
+  let m = document.querySelector("#users");
+  let headDiv = document.createElement("div");
+  headDiv.classList = "parentdiv";
+  let head1 = document.createElement("h2");
+  head1.innerText = "S.No";
+  let head2 = document.createElement("h2");
+  head2.innerText = "Email";
+  let h = document.createElement("hr");
+  h.classList = "line";
+  headDiv.append(head1, head2);
+  m.append(headDiv, h);
+  login_data.forEach(function (el, i) {
+    let div = document.createElement("div");
+    let p = document.createElement("p");
+    p.innerText = i + 1;
+    let p2 = document.createElement("p");
+    p2.innerText = el.email;
+    let hr = document.createElement("hr");
+    hr.classList = "line";
+    div.append(p, p2);
+    m.append(div, hr);
+  });
 }
 displayOnline();
 function displayOnline() {
