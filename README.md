@@ -7,7 +7,9 @@ Internship to Job ( I2J ) is a clone of a website Intern Theory which serves as 
 • Ujjwal Singh
 • Ritish Gautam
 • Amar
-  Manish Kumar Saket
+• Manish Kumar Saket
+
+
 
 <br/>
 
