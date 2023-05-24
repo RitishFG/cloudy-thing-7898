@@ -4,10 +4,10 @@ Internship to Job ( I2J ) is a clone of a website Intern Theory which serves as 
 #Our Team Members 
 
 • Chinta Sivanarayana
-
 • Ujjwal Singh
 • Ritish Gautam
 • Amar
+  Manish Kumar Saket
 
 <br/>
 
